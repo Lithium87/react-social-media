@@ -23,6 +23,7 @@ const Post = ({image, content, user, id}) => {
       <div>
         {isCurrentUser && <button onClick={handleDeletePost}>Delete</button>}
       </div>
+
     </React.Fragment>
   );
 };

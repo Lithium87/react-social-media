@@ -20,9 +20,7 @@ const Post = ({image, content, user, id}) => {
         />}
       <p>{content}</p>
       <div style={{color: isCurrentUser && 'green'}}>{user}</div>
-      <div>
-        {isCurrentUser && <button onClick={handleDeletePost}>Delete</button>}
-      </div>
+      {isCurrentUser && <button onClick={handleDeletePost}>Delete</button>}
     </React.Fragment>
   );
 };
